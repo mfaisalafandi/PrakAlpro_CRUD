@@ -31,9 +31,9 @@ void explode(char text[100], char data[5][100], char separator){
 
 void Menu (int *pilih) {
 	system ("cls");
-	printf ("=======================================================\n");
-	printf ("                  Pemrosesan Data Text\n");
-	printf ("=======================================================\n");
+	printf ("==========================================\n");
+	printf ("          Pemrosesan Data Text\n");
+	printf ("==========================================\n");
 	printf ("1. Simpan/Tambah Data\n");
 	printf ("2. Lihat Data\n");
 	printf ("3. Edit Data\n");
@@ -130,7 +130,7 @@ void editDataMhs() {
 	fclose(fptr);
 	
 	fflush(stdin);
-	if(i != 0) {
+	if(isThere == true) {
 		char nama_lengkap[80], alamat[100], no_hp[15];
 		int ipk;
 		
